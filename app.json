@@ -4,6 +4,7 @@
     "start": "bash start.sh"
   },
   "env": {
+    "PORT": "10000",
     "VNC_PASSWORD": "toolboxlap"
   },
   "ports": [
