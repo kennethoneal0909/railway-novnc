@@ -1,0 +1,15 @@
+{
+  "name": "railway-novnc",
+  "scripts": {
+    "start": "bash start.sh"
+  },
+  "env": {
+    "VNC_PASSWORD": "toolboxlap"
+  },
+  "ports": [
+    {
+      "name": "noVNC",
+      "port": 10000
+    }
+  ]
+}
