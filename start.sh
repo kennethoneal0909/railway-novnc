@@ -1,11 +1,13 @@
 #!/bin/bash
 export DISPLAY=:1
 
-# تشغيل Xvfb وواجهة سطح المكتب
+# تشغيل Xvfb وواجهة رسومية
 Xvfb :1 -screen 0 1024x768x24 &
+
+# تشغيل بيئة سطح المكتب الخفيفة
 fluxbox &
 
-# تشغيل VNC مع كلمة مرور محددة
+# تشغيل VNC مع كلمة المرور 'toolboxlap'
 x11vnc -passwd toolboxlap -display :1 -N -forever -shared -rfbport 5900 &
 
 # تشغيل noVNC على المنفذ 10000
