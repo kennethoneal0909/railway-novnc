@@ -10,5 +10,6 @@ COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
 EXPOSE 10000
+EXPOSE 6080
 
 CMD ["bash", "/start.sh"]
